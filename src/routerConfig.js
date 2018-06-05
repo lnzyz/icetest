@@ -19,18 +19,19 @@ import Code from './pages/Code';
 import All from './pages/All';
 
 import Page10 from './pages/Page10';
+import Page11 from './pages/Page11';
 import NotFound from './pages/NotFound';
 
 const routerConfig = [
   {
+    path: '/register',
+    layout: UserLayout,
+    component: UserRegister,
+  },
+  {
     path: '/page7',
     layout: HeaderAsideFooterResponsiveLayout,
     component: Page7,
-  },
-  {
-    path: '/',
-    layout: UserLayout,
-    component: UserLogin,
   },
   {
     path: '/forgetpassword',
@@ -48,9 +49,9 @@ const routerConfig = [
     component: Page6,
   },
   {
-    path: '/register',
+    path: '/',
     layout: UserLayout,
-    component: UserRegister,
+    component: UserLogin,
   },
   {
     path: '/code',
@@ -66,6 +67,11 @@ const routerConfig = [
     path: '/serch',
     layout: HeaderAsideFooterResponsiveLayout,
     component: Page10,
+  },
+  {
+    path: '/page11',
+    layout: HeaderAsideFooterResponsiveLayout,
+    component: Page11,
   },
   {
     path: '*',

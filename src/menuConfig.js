@@ -16,6 +16,11 @@ const asideMenuConfig = [
     icon: 'home',
   },
   {
+    name: '服务追踪',
+    path: '/page11',
+    icon: 'home',
+  },
+  {
     name: '配置列表',
     path: '/page6',
     icon: 'home',
